@@ -1,10 +1,10 @@
 import { Body, Controller, HttpStatus, Post, Delete } from '@nestjs/common';
-import { LikeService } from './like.service.js';
+import { LikeService } from './like.service';
 import { ApiResponse } from '@nestjs/swagger';
 import { fillObject } from '@project/util/util-core';
-import { LikeRdo } from './rdo/like.rdo.js';
-import { CreateLikeDto } from './dto/create-like.dto.js';
-import { DeleteLikeDto } from './dto/delete-like.dto.js';
+import { LikeRdo } from './rdo/like.rdo';
+import { CreateLikeDto } from './dto/create-like.dto';
+import { DeleteLikeDto } from './dto/delete-like.dto';
 
 @Controller('likes')
 export class LikeController {

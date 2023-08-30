@@ -1,6 +1,6 @@
 import { randomUUID } from 'node:crypto';
 import { Injectable } from '@nestjs/common';
-import { PostEntity } from './entity/post.entity.js';
+import { PostEntity } from './entity/post.entity';
 import { CRUDRepository } from '@project/util/util-types';
 import { IPost } from '@project/shared/app-types';
 

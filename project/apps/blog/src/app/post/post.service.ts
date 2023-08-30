@@ -1,11 +1,11 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { PostMemoryRepository } from './post-memory.repository.js';
-import { CreatePostDto } from './dto/create-post.dto.js';
-import { UpdatePostDto } from './dto/update-post.dto.js';
-import { PostEntity } from './entity/post.entity.js';
-import { POST_NOT_FOUND } from './post.error.js';
+import { PostMemoryRepository } from './post-memory.repository';
+import { CreatePostDto } from './dto/create-post.dto';
+import { UpdatePostDto } from './dto/update-post.dto';
+import { PostEntity } from './entity/post.entity';
+import { POST_NOT_FOUND } from './post.error';
 import { IPost, PostStatus } from '@project/shared/app-types';
-import { RepostDto } from './dto/repost.dto.js';
+import { RepostDto } from './dto/repost.dto';
 
 @Injectable()
 export class PostService {

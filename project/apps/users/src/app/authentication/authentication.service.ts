@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException, UnauthorizedException } from '@nestjs/common';
-import { BlogUserMemoryRepository } from '../blog-user/blog-user-memory.repository.js';
-import { BlogUserEntity } from '../blog-user/blog-user.entity.js';
-import { LoginUserDto } from './dto/login-user.dto.js';
-import { USER_NOT_FOUND, USER_PASSWORD_WRONG } from './authentication.error.js';
+import { BlogUserMemoryRepository } from '../blog-user/blog-user-memory.repository';
+import { BlogUserEntity } from '../blog-user/blog-user.entity';
+import { LoginUserDto } from './dto/login-user.dto';
+import { USER_NOT_FOUND, USER_PASSWORD_WRONG } from './authentication.error';
 
 @Injectable()
 export class AuthenticationService {

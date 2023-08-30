@@ -1,4 +1,4 @@
-import { LikeEntity } from './like.entity.js';
+import { LikeEntity } from './like.entity';
 import { Injectable } from '@nestjs/common';
 import { CRUDRepository } from '@project/util/util-types';
 import { ILike } from '@project/shared/app-types';

@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
-import { BlogUserEntity } from './blog-user.entity.js';
+import { BlogUserEntity } from './blog-user.entity';
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { USER_NOT_FOUND } from '../authentication/authentication.error.js';
+import { USER_NOT_FOUND } from '../authentication/authentication.error';
 import { CRUDRepository } from '@project/util/util-types';
 import { IUser } from '@project/shared/app-types';
 

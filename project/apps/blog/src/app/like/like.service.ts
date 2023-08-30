@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { LikeEntity } from './like.entity.js';
-import { LikeMemoryRepository } from './like-memory.repository.js';
-import { CreateLikeDto } from './dto/create-like.dto.js';
-import { DeleteLikeDto } from './dto/delete-like.dto.js';
+import { LikeEntity } from './like.entity';
+import { LikeMemoryRepository } from './like-memory.repository';
+import { CreateLikeDto } from './dto/create-like.dto';
+import { DeleteLikeDto } from './dto/delete-like.dto';
 
 @Injectable()
 export class LikeService {

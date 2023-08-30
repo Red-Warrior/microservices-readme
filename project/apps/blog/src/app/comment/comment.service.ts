@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { CommentMemoryRepository } from './comment-memory.repository.js';
-import { CreateCommentDto } from './dto/create-comment.dto.js';
-import { RemoveCommentDto } from './dto/remove-comment.dto.js';
-import { CommentEntity } from './comment.entity.js';
+import { CommentMemoryRepository } from './comment-memory.repository';
+import { CreateCommentDto } from './dto/create-comment.dto';
+import { RemoveCommentDto } from './dto/remove-comment.dto';
+import { CommentEntity } from './comment.entity';
 
 @Injectable()
 export class CommentService {

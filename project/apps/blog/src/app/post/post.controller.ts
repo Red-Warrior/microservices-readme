@@ -1,11 +1,11 @@
 import { Body, Controller, Post, Patch, Param, Delete, HttpStatus, Get } from '@nestjs/common';
-import { PostService } from './post.service.js';
+import { PostService } from './post.service';
 import { fillObject } from '@project/util/util-core';
 import { ApiResponse } from '@nestjs/swagger';
-import { PostRdo } from './rdo/post.rdo.js';
-import { CreatePostDto } from './dto/create-post.dto.js';
-import { UpdatePostDto } from './dto/update-post.dto.js';
-import { RepostDto } from './dto/repost.dto.js';
+import { PostRdo } from './rdo/post.rdo';
+import { CreatePostDto } from './dto/create-post.dto';
+import { UpdatePostDto } from './dto/update-post.dto';
+import { RepostDto } from './dto/repost.dto';
 
 @Controller('posts')
 export class PostController {

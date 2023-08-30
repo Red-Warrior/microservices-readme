@@ -1,10 +1,10 @@
 import { Body, Controller, Get, HttpStatus, Param, Post, Patch } from '@nestjs/common';
-import { BlogUserService } from './blog-user.service.js';
+import { BlogUserService } from './blog-user.service';
 import { ApiResponse } from '@nestjs/swagger';
-import { CreateUserDto } from '../authentication/dto/create-user.dto.js';
+import { CreateUserDto } from '../authentication/dto/create-user.dto';
 import { fillObject } from '@project/util/util-core';
-import { UserRdo } from '../authentication/rdo/user.rdo.js';
-import { ChangePasswordDto } from './dto/change-password.dto.js';
+import { UserRdo } from '../authentication/rdo/user.rdo';
+import { ChangePasswordDto } from './dto/change-password.dto';
 
 @Controller('blog-users')
 export class BlogUserController {

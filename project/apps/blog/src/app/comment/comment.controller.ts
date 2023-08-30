@@ -1,11 +1,11 @@
 import { Body, Controller, Delete, Get, HttpStatus, Param, Patch, Post } from '@nestjs/common';
-import { CommentService } from './comment.service.js';
+import { CommentService } from './comment.service';
 import { ApiResponse } from '@nestjs/swagger';
 import { fillObject } from '@project/util/util-core';
-import { CreateCommentDto } from './dto/create-comment.dto.js';
-import { RemoveCommentDto } from './dto/remove-comment.dto.js';
-import { CommentRdo } from './rdo/comment.rdo.js';
-import { UpdateCommentDto } from './dto/update-comment.js';
+import { CreateCommentDto } from './dto/create-comment.dto';
+import { RemoveCommentDto } from './dto/remove-comment.dto';
+import { CommentRdo } from './rdo/comment.rdo';
+import { UpdateCommentDto } from './dto/update-comment';
 
 @Controller('comments')
 export class CommentController {

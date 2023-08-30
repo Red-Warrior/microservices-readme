@@ -1,10 +1,10 @@
 import { CommentEntity } from './comment.entity';
 import { randomUUID } from 'node:crypto';
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { RemoveCommentDto } from './dto/remove-comment.dto.js';
+import { RemoveCommentDto } from './dto/remove-comment.dto';
 import { CRUDRepository } from '@project/util/util-types';
 import { IComment } from '@project/shared/app-types';
-import { COMMENT_NOT_FOUND } from './comment.error.js';
+import { COMMENT_NOT_FOUND } from './comment.error';
 
 @Injectable()
 export class CommentMemoryRepository implements CRUDRepository<CommentEntity, string | RemoveCommentDto, IComment> {

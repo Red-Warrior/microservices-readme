@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strict": true,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -8,7 +9,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "strict": true,
     "target": "esnext",
     "module": "esnext",
     "lib": ["es2020", "dom"],
@@ -17,6 +17,7 @@
     "strictPropertyInitialization": false,
     "baseUrl": ".",
     "paths": {
+      "@project/config/config-users": ["libs/config/config-users/src/index.ts"],
       "@project/shared-types": ["libs/shared-types/src/index.ts"],
       "@project/shared/app-types": ["libs/shared/app-types/src/index.ts"],
       "@project/util/util-core": ["libs/util/util-core/src/index.ts"],

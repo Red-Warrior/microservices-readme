@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { LikeMemoryRepository } from './like-memory.repository.js';
-import { LikeController } from './like.controller.js';
-import { LikeService } from './like.service.js';
+import { LikeMemoryRepository } from './like-memory.repository';
+import { LikeController } from './like.controller';
+import { LikeService } from './like.service';
 
 @Module({
   controllers: [LikeController],
